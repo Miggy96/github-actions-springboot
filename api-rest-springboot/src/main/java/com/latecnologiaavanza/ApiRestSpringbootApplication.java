@@ -19,6 +19,11 @@ public class ApiRestSpringbootApplication {
 		return "Hola desde Spring Boot de nuevo";
 	}
 
+	@GetMapping("/saludos")
+	public String saludarNuevo() {
+		return "Hola desde Spring Boot de nuevo !!";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApiRestSpringbootApplication.class, args);
 	}
