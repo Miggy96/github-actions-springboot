@@ -14,22 +14,22 @@ public class ApiRestSpringbootApplication {
 		return "Hola desde Spring Boot";
 	}
 
-	@GetMapping("/saludos")
+	@GetMapping("/saludar2")
 	public String saludar2() {
 		return "Hola desde Spring Boot de nuevo";
 	}
 
-	@GetMapping("/saludos")
+	@GetMapping("/saludarNuevo")
 	public String saludarNuevo() {
 		return "Hola desde Spring Boot de nuevo !!";
 	}
 
-	@GetMapping("/saludos")
+	@GetMapping("/saludarTodos")
 	public String saludaraTodos() {
 		return "Hola desde Spring Boot de nuevo, los saludo a todos !!";
 	}
 
-	@GetMapping("/saludos")
+	@GetMapping("/saludo")
 	public String salud() {
 		return "Hola desde Spring Boot de nuevo, los saludo a todos !!";
 	}
