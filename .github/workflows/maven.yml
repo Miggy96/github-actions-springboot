@@ -32,7 +32,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-     
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
@@ -40,9 +39,14 @@ jobs:
           tags: latest
           registry: docker.io
           dockerfile: api-rest-springboot/Dockerfile
-          context: api-rest-springboot
+          directory: api-rest-springboot
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+
+     
+     
+
 
 
     
